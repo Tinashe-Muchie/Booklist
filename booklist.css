@@ -1,0 +1,108 @@
+html,body{
+    background-image: url(71V+ODILLXL._AC_SL1000_.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#whole{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+h1{
+    color:black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align:center;
+    padding: 40px;
+}
+#mainContent{
+    width:70%;
+    background-color:burlywood;
+    padding:30px;
+    border:hidden;
+    border-radius:20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+}
+#title{
+    width:100%;
+    height:30px;
+    padding:5px;
+    border:hidden;
+    border-radius: 6px;
+    
+}
+#author{
+    width:100%;
+    height:30px;
+    padding:5px;
+    border:hidden;
+    border-radius:6px;
+}
+#isbn{
+    width:100%;
+    height:30px;
+    padding:5px;
+    border:hidden;
+    border-radius:6px;
+}
+#addbook{
+    width:60%;
+    position:relative;
+    left:20%;
+    height:40px;
+    padding:5px;
+    border:hidden;
+    border-radius:8px;
+    background-color:grey;
+    font-size: medium;
+    font-weight:bolder;
+    font-family:'Courier New', Courier, monospace;
+}
+#table{
+    border: solid;
+    border-radius:5px;
+    width:100%;
+    text-align:center;
+    font-style:normal;
+    font-weight:normal;
+    border-collapse: collapse;
+}
+tr,th,td{
+    border:thin dotted #808080;
+    padding:4px;
+}
+#key{
+    width:60px;
+    height:20px;
+    background-color: grey;
+    border:hidden;
+    border-radius:2px;
+    padding:4px;
+}
+#serch{
+    position:relative;
+    left:25%;
+    width:40%;
+    height:30px;
+    padding:5px;
+    border:hidden;
+    border-radius:6px
+}
+#sechButton{
+    position:relative;
+    left:25%;
+    width:6%;
+    height:30px;
+    padding:5px;
+    border:hidden;
+    border-radius:8px;
+    background-color:grey;
+}
+footer{
+    font-size: large;
+    font-weight: bolder;
+    text-align: center;
+}
