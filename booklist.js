@@ -25,8 +25,8 @@ function getEntriesArray(){
 }
 function createEntries(){
     entriesArray=getEntriesArray();
-    var title = document.getElementById("title").value;
-    var author = document.getElementById("author").value;
+    var title = document.getElementById("title").value.toUpperCase();
+    var author = document.getElementById("author").value.toUpperCase();
     var isbn = document.getElementById("isbn").value;
 
     if (title===""){
@@ -61,7 +61,7 @@ function addbooksToDom(key, value) {
     var deleteButton=document.createElement("button");
     deleteButton.setAttribute("type", "button");
     deleteButton.setAttribute("id", key);
-    deleteButton.innerText="Trash";
+    deleteButton.innerText= "trash";
 
     table.appendChild(tableRow);
     var allInfo=[];
@@ -101,7 +101,7 @@ function removeBookFromDom(key){
     row.parentNode.removeChild(row);    
 }
 function searchBook(key, value){
-    const search=document.getElementById("serch").value;
+    const search=document.getElementById("serch").value.toUpperCase();
     entriesArray=getEntriesArray();
     /*The first for loop is meant to iterate through the entriesArray in order to get the keys and the values of the array,
     then the second for loop through iterates each value of the array to determine whether a book searched by the user is 
@@ -117,7 +117,4 @@ function searchBook(key, value){
         }
     }
     document.getElementById("serch").value="";
-}
-function showBookinDom(){
- 
 }
